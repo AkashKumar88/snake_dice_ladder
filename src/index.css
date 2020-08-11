@@ -1,0 +1,201 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+
+body{
+  font: 1.6rem helvetica;
+  height: 100vh;
+  margin: 0rem;
+}
+
+#root{
+  height: 100%;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer"
+  ;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 7rem 1fr 5rem;
+  height: 100%;
+}
+
+.header{
+  flex-wrap: wrap;
+  grid-area: header;
+  /* background-color: aquamarine; */
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  font-weight: bolder;
+  margin-bottom: 0.5rem;
+}
+
+.main{
+  grid-area: main;
+  margin: 0px;
+}
+
+
+.footer{
+  grid-area: footer;
+  /* background-color: aquamarine; */
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
+}
+
+/* input */
+
+.input_item{
+ text-align: center;
+ font-size: larger;
+
+}
+
+.sortOrder{
+  height: 3rem;
+  width: 5rem;
+  /* font-size: larger; */
+}
+
+/* Grid */
+
+.ui_grid{
+  height: 50vh;
+  /* width: 50rem; */
+  /* width: 150px; */
+  margin: 2rem;
+  display: grid;
+  justify-content: center;
+  /* justify-items: center; */
+  align-items: stretch;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem 10rem 10rem;
+}
+
+.cell{
+  /* grid-area: cell; */
+  display: block;
+  color: black;
+  text-align: center;
+  /* background-color: burlywood; */
+  font-size: 3rem;
+  padding: 1rem;
+  border: 0.1rem solid black;
+  /* height: 5rem;
+  width: 5rem; */
+}
+
+.colorBox{
+  display: flex;
+  justify-content: space-around;
+}
+
+.grid_Timmer_box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.timmer{
+  display: inline-block;
+  padding: 2rem;
+  background-color: burlywood;
+  border: 0.2 solid black;
+  border-radius: 50%;
+}
+
+/* Bottom Main */
+.main_bttom{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.circular{
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  
+}
+
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  background-color: yellow;
+}
+
+
+.activeBox{
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  text-align: center;
+}
+
+/* positions of colors on Grid cell */
+
+.red_position{
+  /* top: 2rem; */
+  left: 1rem;
+  position: relative;
+}
+
+
+/* dice */
+
+.dice_image{
+  border: 0.1rem solid grey;
+  height: 5rem;
+  width: 5rem;
+}
+
+.dice_box{
+  box-shadow: .5rem .5rem grey;
+}
+
+button{
+  height: 5rem;
+  width: 8rem;
+  color: black;
+}
+button :hover{
+  border: 0.1rem solid grey;
+}
+
+
