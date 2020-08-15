@@ -16,7 +16,7 @@ function MainBottom(props) {
                 <div style ={{color : "green", fontSize: "1.5rem", fontWeight: "bolder"}}>ActivePlayer</div>    
             </div>
             
-            <div style={{color : "green", fontSize: "3rem", fontWeight: "bolder"}}>{props.winner ? `Player ${props.winner} is Winner!!` : ''}</div>
+            <div className="player_win">{props.winner ? `Player ${props.winner} is Winner!!` : ''}</div>
             <div>
                 <Dice 
                     startFlag={props.gameStart} 

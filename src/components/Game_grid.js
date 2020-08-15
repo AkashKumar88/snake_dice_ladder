@@ -7,7 +7,7 @@ function Game_grid(props){
 
 
     return (
-        <div>
+        <div className="grid_box">
             <div className="input_item">         
                 Select Number of Players
                 <select className="sortOrder" onChange= {e => props.totalPlayerSelect(e.target.value)}>
@@ -21,10 +21,14 @@ function Game_grid(props){
                     {numbers.map(number => <div className="cell" id={`${number}`} key={number}>
                                             <div>{number}</div> 
                                             <div className="colorBox">
-                                                <div className={`cell${number}Red`}> </div>
-                                                <div className={`cell${number}Blue`}></div>
-                                                <div className={`cell${number}Yellow`}></div>
-                                                <div className={`cell${number}Green`}></div>
+                                                {props.score.player1 === number ? <div className="circular red"> </div> :
+                                                <div className={`cell${number}Red`}> </div>}
+                                                {props.score.player2 === number ? <div className="circular blue"> </div> :
+                                                <div className={`cell${number}Blue`}> </div>}
+                                                {props.score.player3 === number ? <div className="circular green"> </div> :
+                                                <div className={`cell${number}Green`}> </div>}
+                                                {props.score.player4 === number ? <div className="circular yellow"> </div> :
+                                                <div className={`cell${number}Yellow`}> </div>}
                                             </div> 
                                         </div>)}
                 </div>

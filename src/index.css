@@ -1,17 +1,3 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
-
 html{
   font-size: 62.5%;
   box-sizing: border-box;
@@ -43,17 +29,18 @@ body{
 }
 
 .header{
-  flex-wrap: wrap;
   grid-area: header;
-  /* background-color: aquamarine; */
+  background-color: #b8c7d6;
   color: black;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   padding: 0.5rem;
   font-weight: bolder;
   margin-bottom: 0.5rem;
 }
+
 
 .main{
   grid-area: main;
@@ -63,7 +50,7 @@ body{
 
 .footer{
   grid-area: footer;
-  /* background-color: aquamarine; */
+  background-color: #b8c7d6;
   color: black;
   display: flex;
   justify-content: center;
@@ -98,6 +85,10 @@ body{
   align-items: stretch;
   grid-template-columns: 10rem 10rem 10rem 10rem;
   grid-template-rows: 10rem 10rem 10rem 10rem;
+}
+
+.grid_box{
+  margin: 5rem auto;
 }
 
 .cell{
@@ -137,6 +128,13 @@ body{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin: 4rem auto;
+}
+
+.player_win{
+  font-weight: bolder;
+  font-size: medium;
+  color: green;
 }
 
 .circular{

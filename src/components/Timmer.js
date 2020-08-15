@@ -10,7 +10,7 @@ function Timmer(props) {
                 setSeconds(5);
               }
        
-        });
+        },[seconds]);
 
     return (
   
